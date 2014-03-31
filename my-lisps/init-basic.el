@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-03-31 15:25:06 by jiangtao>
+;; Time-stamp: <2014-03-31 21:59:29 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -51,14 +51,8 @@
 	    "/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"))
 
 
-(defun set-font (english chinese english-size chinese-size)
-  (set-face-attribute 'default nil :font
-                      (format "%s:pixelsize=%d" english english-size))
-  (dolist (charset '(kana han symbol cjk-misc bopomofo))
-    (set-fontset-font (frame-parameter nil 'font) charset
-                      (font-spec :family chinese :size chinese-size))))
-
-(when *is-a-mac* (and *is-gui*)
+(when  *is-gui*
+  (require 'init-font)
   (set-font "Consolas" "STHeiti" 12 14))
 
 
