@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-03-31 10:39:20 by jiangtao>
+;; Time-stamp: <2014-03-31 15:25:06 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -106,7 +106,7 @@
 (require 'linum);
 (setq linum-format "%3d")
 (add-hook 'find-file-hooks (lambda () (linum-mode 1)))
-
+(setq column-number-mode t)
 (require 'ahei-misc)
 (provide 'init-basic)
 
