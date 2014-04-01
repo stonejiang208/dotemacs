@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-03-31 21:59:29 by jiangtao>
+;; Time-stamp: <2014-04-01 19:43:27 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -53,7 +53,9 @@
 
 (when  *is-gui*
   (require 'init-font)
-  (set-font "Consolas" "STHeiti" 12 14))
+  (if *win32* (set-font "Consolas" "Microsoft YaHei" 16 18)  (set-font "Consolas" "STHeiti" 12 14) 
+	)
+	)
 
 
 ;; Character encoding
