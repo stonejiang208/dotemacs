@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-04-01 19:43:27 by jiangtao>
+;; Time-stamp: <2014-04-01 19:57:53 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -53,7 +53,7 @@
 
 (when  *is-gui*
   (require 'init-font)
-  (if *win32* (set-font "Consolas" "Microsoft YaHei" 16 18)  (set-font "Consolas" "STHeiti" 12 14) 
+  (if *win32* (set-font "Consolas" "Microsoft YaHei" 14 16)  (set-font "Consolas" "STHeiti" 12 14) 
 	)
 	)
 
@@ -104,5 +104,7 @@
 (add-hook 'find-file-hooks (lambda () (linum-mode 1)))
 (setq column-number-mode t)
 (require 'ahei-misc)
+(require 'eval-after-load)
+(require 'view-mode-settings)
 (provide 'init-basic)
 
