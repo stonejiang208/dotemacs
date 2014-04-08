@@ -19,7 +19,7 @@
 (global-set-key "\C-cn" 'ra/note)
 (global-set-key "\C-cw" 'ra/review)
 
-
+(setq org-startup-indented t)
 ;; functions for special org-files
 (defun ra/gtd ()
    (interactive)
