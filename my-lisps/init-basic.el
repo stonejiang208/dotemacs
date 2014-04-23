@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-04-01 19:57:53 by jiangtao>
+;; Time-stamp: <2014-04-22 12:41:59 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -36,6 +36,7 @@
 (setq ring-bell-function 'ignore)
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
+(setq dired-dwim-target t)
 (if (eq system-type 'darwin)
     (setq exec-path
           (append 
