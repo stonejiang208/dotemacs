@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-04-22 12:41:59 by jiangtao>
+;; Time-stamp: <2014-04-25 09:05:04 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -13,6 +13,8 @@
 (setq *unix* (or *linux* (eq system-type 'usg-unix-v) (eq system-type 'berkeley-unix)) )
 (setq *linux-x* (and window-system *linux*) )
 (defconst *is-gui* (if window-system t nil))
+(when *win32*
+	(require 'init-win32))
 
 (when *is-a-mac*
   (setq mac-command-modifier 'meta)
