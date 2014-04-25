@@ -148,16 +148,25 @@
         (list
          "d:/jiangtao/gtd/inbox.org"
          "d:/jiangtao/gtd/tasks.org"
+         "d:/jiangtao/gtd/review.org"
+         "d:/jiangtao/gtd/gtd.org"
+				 "d:/jiangtao/gtd/someday.org"
          "d:/jiangtao/gtd/projects.org"))
        ((eq system-type 'darwin)
         (list
          "~/gtd/inbox.org"
          "~/gtd/tasks.org"
+				 "~/gtd/gtd.org"
+				 "~/gtd/review.org"
+				 "~/gtd/someday.org"
          "~/gtd/projects.org"))
        ((eq system-type 'gnu/linux)
         (list
          "~/gtd/inbox.org"
          "~/gtd/tasks.org"
+				 "~/gtd/gtd.org"
+				 "~/gtd/review.org"
+				 "~/gtd/someday.org"
          "~/gtd/projects.org"))))
 
 (setq org-agenda-include-diary t
