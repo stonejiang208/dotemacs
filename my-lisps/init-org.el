@@ -151,6 +151,7 @@
          "d:/jiangtao/gtd/review.org"
          "d:/jiangtao/gtd/gtd.org"
 				 "d:/jiangtao/gtd/someday.org"
+				 "d:/jiangtao/gtd/notes.org"
          "d:/jiangtao/gtd/projects.org"))
        ((eq system-type 'darwin)
         (list
@@ -158,6 +159,7 @@
          "~/gtd/tasks.org"
 				 "~/gtd/gtd.org"
 				 "~/gtd/review.org"
+				 "~/gtd/notes.org"
 				 "~/gtd/someday.org"
          "~/gtd/projects.org"))
        ((eq system-type 'gnu/linux)
@@ -165,6 +167,7 @@
          "~/gtd/inbox.org"
          "~/gtd/tasks.org"
 				 "~/gtd/gtd.org"
+				 "~/gtd/notes.org"
 				 "~/gtd/review.org"
 				 "~/gtd/someday.org"
          "~/gtd/projects.org"))))
@@ -197,10 +200,10 @@
 ;; remember-mode is since org-mode version 7 replaced by org-capture
 (setq org-default-notes-file (concat org-directory "/inbox.org"))
 (setq org-capture-templates
-      '(("y" "Task" entry
+      '(("t" "Task" entry
          (file+headline "inbox.org" "Inbox")
          "* TODO %^{description} %^g%^{effort}p\n  :LOGBOOK:\n  - State \"TODO\"       from \"\"           %U\n  :END:\n\n  %?%i \n  :%a: class="string">")
-        ("t" "Task woL" entry
+        ("i" "Inbox" entry
          (file+headline "inbox.org" "Inbox")
          "* TODO %^{description} %^g%^{effort}p\n  :LOGBOOK:\n  - State \"TODO\"       from \"\"           %U\n  :END:\n\n  %?%i \n")
         ("s" "Someday" entry
