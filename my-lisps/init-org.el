@@ -18,6 +18,7 @@
 (global-set-key "\C-cp" 'ra/proj)
 (global-set-key "\C-cn" 'ra/note)
 (global-set-key "\C-cw" 'ra/review)
+(global-set-key "\C-xp" 'ra/passwd)
 
 ;;(setq org-startup-indented t)
 ;; functions for special org-files
@@ -81,6 +82,17 @@
      ((eq system-type 'gnu/linux)
       "~/gtd/inbox.org")))
   (delete-other-windows))
+
+(defun ra/passwd ()
+  (interactive)
+  (find-file
+   (cond
+     ((eq system-type 'windows-nt)
+      "d:/jiangtao/gtd/passwd.org")
+     ((eq system-type 'darwin)
+      "~/Documents/passwd.org")
+     ((eq system-type 'gnu/linux)
+      "~/gtd/passwd.org"))))
 
 ;; main org directory
 (setq org-directory
