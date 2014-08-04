@@ -1,6 +1,6 @@
 ;; -*- Emacs-Lisp -*-
 
-;; Time-stamp: <2012-01-01 13:12:37 Sunday by taoshanwen>
+;; Time-stamp: <2014-04-29 11:43:08 by jiangtao>
 
 (require 'auto-complete-config)
 (require 'auto-complete+)
@@ -189,6 +189,15 @@
           ac-source-files-in-current-dir
           ac-source-filename)))
 
+(defun ac-settings-4-org ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
 (am-add-hooks
  `(lisp-mode-hook emacs-lisp-mode-hook lisp-interaction-mode-hook
                   svn-log-edit-mode-hook change-log-mode-hook)
@@ -205,6 +214,7 @@
    ('ruby-mode-hook   'ac-settings-4-ruby)
    ('html-mode-hook   'ac-settings-4-html)
    ('awk-mode-hook    'ac-settings-4-awk)
+	 ('org-mode-hook    'ac-settings-4-org)
    ('tcl-mode-hook    'ac-settings-4-tcl)))
 
 (eal-eval-by-modes

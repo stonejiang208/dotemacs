@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-04-25 10:16:24 by jiangtao>
+;; Time-stamp: <2014-04-30 22:48:38 by jiangtao>
 
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -25,3 +25,4 @@
 (require 'all-auto-complete-settings)
 (require 'init-dev)
 (require 'init-org)
+(require 'my-auctex)
