@@ -24,7 +24,7 @@
   (insert (format-time-string "<%Y-%m-%d %H:%M:%S>")))
 (add-hook 'org-mode-hook
           (lambda ()
-            (local-set-key "\C-c-" 'org-my-custom-timestamp)))
+            (local-set-key "\C-c '" 'org-my-custom-timestamp)))
 
 ;;(setq org-startup-indented t)
 ;; functions for special org-files

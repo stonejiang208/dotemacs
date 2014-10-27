@@ -52,5 +52,6 @@
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 
+(require 'git-emacs)
 
 ;;; init-dev.el ends here
