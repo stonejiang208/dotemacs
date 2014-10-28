@@ -1,3 +1,4 @@
+add cmake-mode
 2012-10-24  Stone Jiang  <jiangtao@tao-studio.net>
 
 	* lisp/my-lisps/org-settings.el: delete F5
