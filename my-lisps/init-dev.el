@@ -53,6 +53,6 @@
 
 
 (require 'git-emacs)
-
+(require 'cmake-mode)
 ;;; init-dev.el ends here
 
