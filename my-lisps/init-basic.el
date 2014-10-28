@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-04-25 09:05:04 by jiangtao>
+;; Time-stamp: <2014-10-29 01:22:05 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -109,5 +109,7 @@
 (require 'ahei-misc)
 (require 'eval-after-load)
 (require 'view-mode-settings)
+
+(require 'weblogger)
 (provide 'init-basic)
 
