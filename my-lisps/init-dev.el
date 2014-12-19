@@ -51,6 +51,8 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+ (autoload 'expand-member-functions "member-functions" "Expand C++ member function declarations" t)
+ (add-hook 'c++-mode-hook (lambda () (local-set-key "\C-cm" #'expand-member-functions)))
 
 (require 'git-emacs)
 (require 'cmake-mode)
