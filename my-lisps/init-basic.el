@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-10-29 01:22:05 by jiangtao>
+;; Time-stamp: <2014-12-21 08:02:27 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -111,5 +111,7 @@
 (require 'view-mode-settings)
 
 (require 'weblogger)
+(require 'maxframe)
+(add-hook 'window-setup-hook 'maximize-frame t)
 (provide 'init-basic)
 
