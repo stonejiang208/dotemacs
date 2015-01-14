@@ -58,3 +58,4 @@
 (require 'cmake-mode)
 ;;; init-dev.el ends here
 
+(require 'android-mode)
