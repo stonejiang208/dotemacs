@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-10-29 01:22:05 by jiangtao>
+;; Time-stamp: <2015-02-06 07:53:00 by debug>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -67,7 +67,7 @@
       (prefer-coding-system 'utf-8-unix)
       (set-default-coding-systems 'utf-8-unix)
       (if (< emacs-major-version 23)
-          (sext-keyboard-coding-system 'utf-8))
+          (set-keyboard-coding-system 'utf-8))
       (set-clipboard-coding-system 'utf-8)
       (set-terminal-coding-system 'utf-8)))
 (if (or (eq system-type 'gnu/linux)
