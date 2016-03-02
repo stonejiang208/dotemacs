@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2013-11-18 13:45:08 by jiangtao>
+;; Time-stamp: <2013-12-26 22:15:36 by jiangtao>
 
 (fset 'yes-or-no-p 'y-or-n-p)
 ;; 防止页面滚动时跳动,scroll-margin 3可以在靠近屏幕边沿3行时就开始滚动,
@@ -85,8 +85,8 @@
 (require 'color-theme)
 (color-theme-initialize)
 ;;(color-theme-dark-blue2);
-(color-theme-classic);
-
+;;(color-theme-classic);
+(color-theme-dark-laptop)
 (require 'time-stamp)
 (setq time-stamp-active t)
 (setq time-stamp-warn-inactive t)
