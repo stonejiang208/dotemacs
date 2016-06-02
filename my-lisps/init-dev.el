@@ -38,9 +38,9 @@
 (require 'generic-x)
 (require 'mpc-mode)
 (require 'xcscope)
-;;(require 'yasnippet-settings)
+(require 'yasnippet-settings)
 
- (which-function-mode 1)
+(which-function-mode 1)
 
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
@@ -59,7 +59,7 @@
 (require 'gud)
 ;;; init-dev.el ends here
 
-(require 'android-mode)
+;(require 'android-mode)
 
-(autoload 'smali-mode "smali-mode" "Major mode for editing and viewing smali issues" t)
-(add-to-list 'auto-mode-alist '(".smali$" . smali-mode))
+;(autoload 'smali-mode "smali-mode" "Major mode for editing and viewing smali issues" t)
+;(add-to-list 'auto-mode-alist '(".smali$" . smali-mode))
