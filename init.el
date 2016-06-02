@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2016-06-02 11:39:20 by jiangtao>
+;; Time-stamp: <2016-06-02 11:54:47 by jiangtao>
 
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -21,11 +21,12 @@
 ;;(color-theme-classic);
 
 (require 'init-basic)
-;; (require 'init-company)
-;; (require 'all-auto-complete-settings)
-;; (require 'init-dev)
-;; (require 'init-org)
-;; (require 'my-auctex)
+(require 'init-swiper)
+(require 'init-company)
+(require 'all-auto-complete-settings)
+(require 'init-dev)
+(require 'init-org)
+(require 'my-auctex)
 
 
 
