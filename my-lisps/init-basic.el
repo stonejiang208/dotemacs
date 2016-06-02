@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-12-21 08:02:27 by jiangtao>
+;; Time-stamp: <2016-06-02 11:40:35 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -32,7 +32,6 @@
     (global-set-key (kbd "M-c") 'ns-copy-including-secondary)
     (global-set-key (kbd "M-v") 'ns-paste-secondary)))
 
-
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq scroll-margin 3 scroll-conservatively 10000)
 (setq ring-bell-function 'ignore)
@@ -53,13 +52,11 @@
     (setenv "PATH" 
 	    "/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"))
 
-
 (when  *is-gui*
   (require 'init-font)
   (if *win32* (set-font "Consolas" "Microsoft YaHei" 14 16)  (set-font "Consolas" "STHeiti" 12 14) 
 	)
 	)
-
 
 ;; Character encoding
 (if (eq system-type 'darwin)
@@ -110,7 +107,7 @@
 (require 'eval-after-load)
 (require 'view-mode-settings)
 
-(require 'weblogger)
+;; (require 'weblogger)
 (require 'maxframe)
 (add-hook 'window-setup-hook 'maximize-frame t)
 (provide 'init-basic)

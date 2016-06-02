@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2014-12-26 09:37:24 by jiangtao>
+;; Time-stamp: <2016-06-02 11:39:20 by jiangtao>
 
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -21,24 +21,11 @@
 ;;(color-theme-classic);
 
 (require 'init-basic)
-(require 'init-company)
-(require 'all-auto-complete-settings)
-(require 'init-dev)
-(require 'init-org)
-(require 'my-auctex)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(safe-local-variable-values (quote ((add-log-time-format lambda nil (progn (setq tz (getenv "TZ")) (set-time-zone-rule "UTC") (setq time (format-time-string "%a %b %e %H:%M:%S %Z %Y" (current-time))) (set-time-zone-rule tz) time)))))
- '(send-mail-function (quote smtpmail-send-it))
- '(smtpmail-smtp-server "smtp.qq.com")
- '(smtpmail-smtp-service 25)
- '(weblogger-config-alist (quote (("default" "http://www.tao-studio.net/blog/xmlrpc.php" "stone" "" "1") ("jiangtao" "http://www.tao-studio.net/blog/xmlrpc.php" "jiangtao" "" "1")))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; (require 'init-company)
+;; (require 'all-auto-complete-settings)
+;; (require 'init-dev)
+;; (require 'init-org)
+;; (require 'my-auctex)
+
+
+
