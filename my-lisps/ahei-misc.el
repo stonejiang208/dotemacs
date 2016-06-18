@@ -1,7 +1,7 @@
 ;;; ahei-misc.el --- Some basic utility function of ahei
 ;; -*- Emacs-Lisp -*-
 
-;; Time-stamp: <2010-09-11 09:53:02 Saturday by taoshanwen>
+;; Time-stamp: <2016-06-03 13:54:33 by jiangtao>
 
 ;; This  file is free  software; you  can redistribute  it and/or
 ;; modify it under the terms of the GNU General Public License as
@@ -31,7 +31,6 @@
 ;;;###autoload
 (defun am-add-hooks (hooks function &optional append local)
   "Call `add-hook' on hook list HOOKS use arguments FUNCTION, APPEND, LOCAL.
-
 HOOKS can be one list or just a hook."
   (if (listp hooks)
       (mapc
