@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2016-06-20 21:06:33 by jiangtao>
+;; Time-stamp: <2016-06-20 21:25:10 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -23,6 +23,8 @@
   (setq default-input-method "MacOSX")
   ;; Make mouse wheel / trackpad scrolling less jerky
   (setq mouse-wheel-scroll-amount '(0.001))
+	(require 'ls-lisp)
+  (setq ls-lisp-use-insert-directory-program nil)
   (when *is-cocoa-emacs*
     ;; Woohoo!!
 		;;(set-frame-parameter nil 'fullscreen 'fullboth)
