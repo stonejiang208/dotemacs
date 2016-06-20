@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2016-06-02 11:48:52 by jiangtao>
+;; Time-stamp: <2016-06-20 21:06:33 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -30,7 +30,7 @@
     (global-set-key (kbd "M-h") 'ns-do-hide-emacs)
     (global-set-key (kbd "M-ˍ") 'ns-do-hide-others) ;; what describe-key reports
     (global-set-key (kbd "M-c") 'ns-copy-including-secondary)
-    (global-set-key (kbd "M-v") 'ns-paste-secondary)))
+		))
 
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq scroll-margin 3 scroll-conservatively 10000)

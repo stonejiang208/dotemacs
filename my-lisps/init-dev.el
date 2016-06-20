@@ -38,7 +38,7 @@
 (require 'generic-x)
 (require 'mpc-mode)
 (require 'xcscope)
-(require 'yasnippet-settings)
+;(require 'yasnippet-settings)
 
 (which-function-mode 1)
 
