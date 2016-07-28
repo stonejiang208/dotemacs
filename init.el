@@ -1,6 +1,6 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2016-06-20 21:09:10 by jiangtao>
-(setq debug-on-error t)
+;; Time-stamp: <2016-06-20 21:30:39 by jiangtao>
+;;(setq debug-on-error t)
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
 

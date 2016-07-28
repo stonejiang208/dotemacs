@@ -63,3 +63,6 @@
 
 ;(autoload 'smali-mode "smali-mode" "Major mode for editing and viewing smali issues" t)
 ;(add-to-list 'auto-mode-alist '(".smali$" . smali-mode))
+
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
