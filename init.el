@@ -20,12 +20,12 @@
 ;;(color-theme-classic);
 
 (require 'init-basic)
-(require 'init-swiper)
+;;(require 'init-swiper)
 (require 'init-company)
 (require 'all-auto-complete-settings)
 (require 'init-dev)
 (require 'init-org)
-(require 'my-auctex)
+;;(require 'my-auctex)
 
 
 
