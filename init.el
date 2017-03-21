@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2016-06-02 11:54:47 by jiangtao>
+;; Time-stamp: <2016-11-24 09:35:28 by jiangtao>
 
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -21,7 +21,7 @@
 ;;(color-theme-classic);
 
 (require 'init-basic)
-(require 'init-swiper)
+;;(require 'init-swiper)
 (require 'init-company)
 (require 'all-auto-complete-settings)
 (require 'init-dev)
