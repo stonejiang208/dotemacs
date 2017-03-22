@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2016-06-20 21:25:10 by jiangtao>
+;; Time-stamp: <2017-03-22 09:35:59 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -112,7 +112,8 @@
 ;; (require 'weblogger)
 (require 'maxframe)
 (add-hook 'window-setup-hook 'maximize-frame t)
-
+;; all backups goto ~/.backups instead in the current directory
+(setq backup-directory-alist (quote (("." . "~/.emacs-backups"))))
 
 (provide 'init-basic)
 
