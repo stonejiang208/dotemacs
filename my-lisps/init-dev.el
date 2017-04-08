@@ -66,3 +66,6 @@
 
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
+
+(require 'protobuf-mode)
