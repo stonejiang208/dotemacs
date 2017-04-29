@@ -56,7 +56,7 @@
 
 (require 'git-emacs)
 (require 'cmake-mode)
-(require 'gud)
+(require 'lldb-gud)
 ;;; init-dev.el ends here
 
 ;(require 'android-mode)
