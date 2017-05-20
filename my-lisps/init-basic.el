@@ -1,5 +1,5 @@
 ;; -*- Emacs-Lisp -*-
-;; Time-stamp: <2017-03-22 09:35:59 by jiangtao>
+;; Time-stamp: <2017-05-20 23:56:18 by jiangtao>
 ;;
 (setq user-mail-address "jiangtao@tao-studio.net")
 (setq user-full-name    "Stone Jiang")
@@ -37,6 +37,8 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq scroll-margin 3 scroll-conservatively 10000)
 (setq ring-bell-function 'ignore)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 (setq inhibit-startup-message t)
 (setq initial-scratch-message "")
 (setq dired-dwim-target t)
